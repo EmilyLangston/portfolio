@@ -1,0 +1,99 @@
+import React from 'react';
+import { Award, Heart, Target, Users, Camera, Upload } from 'lucide-react';
+
+const About = () => {
+  return (
+    <section id="about" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Passionate full-stack developer with expertise across modern development platforms and frameworks
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Photo Section */}
+          <div className="order-2 lg:order-1">
+            <div className="relative">
+              {/* Photo placeholder with upload area */}
+              <div className="aspect-square max-w-md mx-auto bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl border-4 border-white shadow-2xl overflow-hidden group hover:shadow-3xl transition-all duration-300">
+                <img src="./me.png" />
+              </div>
+
+              {/* Decorative elements around photo */}
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full opacity-60 animate-pulse"></div>
+              <div className="absolute -top-2 -right-8 w-6 h-6 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full opacity-60 animate-pulse delay-500"></div>
+              <div className="absolute -bottom-6 -left-2 w-10 h-10 bg-gradient-to-br from-green-400 to-blue-400 rounded-full opacity-60 animate-pulse delay-1000"></div>
+              <div className="absolute -bottom-4 -right-6 w-4 h-4 bg-gradient-to-br from-orange-400 to-red-400 rounded-full opacity-60 animate-pulse delay-700"></div>
+
+              {/* Background glow */}
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-3xl blur-xl -z-10 animate-pulse"></div>
+            </div>
+          </div>
+
+          {/* Content Section */}
+          <div className="order-1 lg:order-2 space-y-8">
+            <div className="prose prose-lg text-gray-600 space-y-6">
+              <p className="text-lg leading-relaxed">
+                I'm a versatile full-stack developer who thrives on building exceptional digital experiences.
+                My expertise spans across cutting-edge platforms like <span className="font-semibold text-blue-600">Lovable</span>,
+                <span className="font-semibold text-purple-600"> Cursor</span>,
+                <span className="font-semibold text-green-600"> Replit</span>, and
+                <span className="font-semibold text-orange-600"> Bolt.new</span>,
+                as well as robust technologies including the MERN stack, Supabase, and Next.js.
+              </p>
+              <p className="text-lg leading-relaxed">
+                What sets me apart is my ability to rapidly prototype and deploy applications across multiple
+                platforms while maintaining high code quality and user experience standards. I believe in
+                leveraging the right tools for each project to deliver optimal results.
+              </p>
+              <p className="text-lg leading-relaxed">
+                Whether you need a lightning-fast MVP built in Bolt.new, a complex full-stack application
+                with Next.js and Supabase, or collaborative development in Replit, I bring the expertise
+                to make your vision a reality.
+              </p>
+            </div>
+
+            {/* Values Grid */}
+            <div className="grid grid-cols-2 gap-6 pt-8">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl text-center transform hover:scale-105 transition-all duration-300 hover:shadow-lg border border-blue-100">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Target className="text-white" size={24} />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Goal-Oriented</h3>
+                <p className="text-gray-600 text-sm">Focused on delivering results that exceed expectations</p>
+              </div>
+
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-2xl text-center transform hover:scale-105 transition-all duration-300 hover:shadow-lg border border-purple-100">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Heart className="text-white" size={24} />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Passionate</h3>
+                <p className="text-gray-600 text-sm">Love for clean code and beautiful user experiences</p>
+              </div>
+
+              <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl text-center transform hover:scale-105 transition-all duration-300 hover:shadow-lg border border-green-100">
+                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Users className="text-white" size={24} />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Collaborative</h3>
+                <p className="text-gray-600 text-sm">Work seamlessly with teams and stakeholders</p>
+              </div>
+
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-2xl text-center transform hover:scale-105 transition-all duration-300 hover:shadow-lg border border-orange-100">
+                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Award className="text-white" size={24} />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Excellence</h3>
+                <p className="text-gray-600 text-sm">Committed to delivering high-quality solutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
