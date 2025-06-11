@@ -17,18 +17,22 @@ const About = () => {
           <div className="order-2 lg:order-1">
             <div className="relative">
               {/* Photo placeholder with upload area */}
-              <div className="aspect-square max-w-md mx-auto bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl border-4 border-white shadow-2xl overflow-hidden group hover:shadow-3xl transition-all duration-300">
-                <img src="./me.png" />
+              <div className="aspect-square max-w-md mx-auto bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl border-4 border-white shadow-2xl overflow-hidden group hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:rotate-2">
+                <img 
+                  src="./me.png" 
+                  alt="Personal photo"
+                  className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110 group-hover:contrast-105"
+                />
               </div>
 
               {/* Decorative elements around photo */}
-              <div className="absolute -top-4 -left-4 w-8 h-8 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full opacity-60 animate-pulse"></div>
-              <div className="absolute -top-2 -right-8 w-6 h-6 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full opacity-60 animate-pulse delay-500"></div>
-              <div className="absolute -bottom-6 -left-2 w-10 h-10 bg-gradient-to-br from-green-400 to-blue-400 rounded-full opacity-60 animate-pulse delay-1000"></div>
-              <div className="absolute -bottom-4 -right-6 w-4 h-4 bg-gradient-to-br from-orange-400 to-red-400 rounded-full opacity-60 animate-pulse delay-700"></div>
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full opacity-60 animate-pulse transition-all duration-500 group-hover:scale-125 group-hover:opacity-80 group-hover:-translate-y-1 group-hover:-translate-x-1"></div>
+              <div className="absolute -top-2 -right-8 w-6 h-6 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full opacity-60 animate-pulse delay-500 transition-all duration-500 group-hover:scale-125 group-hover:opacity-80 group-hover:-translate-y-1 group-hover:translate-x-1"></div>
+              <div className="absolute -bottom-6 -left-2 w-10 h-10 bg-gradient-to-br from-green-400 to-blue-400 rounded-full opacity-60 animate-pulse delay-1000 transition-all duration-500 group-hover:scale-125 group-hover:opacity-80 group-hover:translate-y-1 group-hover:-translate-x-1"></div>
+              <div className="absolute -bottom-4 -right-6 w-4 h-4 bg-gradient-to-br from-orange-400 to-red-400 rounded-full opacity-60 animate-pulse delay-700 transition-all duration-500 group-hover:scale-125 group-hover:opacity-80 group-hover:translate-y-1 group-hover:translate-x-1"></div>
 
               {/* Background glow */}
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-3xl blur-xl -z-10 animate-pulse"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-3xl blur-xl -z-10 animate-pulse transition-all duration-500 group-hover:blur-2xl group-hover:from-blue-400/30 group-hover:to-purple-400/30"></div>
             </div>
           </div>
 
