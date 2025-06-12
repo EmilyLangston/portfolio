@@ -22,7 +22,7 @@ const Skills = () => {
         { name: "React", level: 5 },
         { name: "Next.js", level: 5 },
         { name: "Tailwind CSS", level: 5 },
-        { name: "Shopify", level: 5 },
+        { name: "Shopify", level: 4 },
         { name: "Vite", level: 3 }
       ],
       color: "from-blue-400 to-purple-500"
