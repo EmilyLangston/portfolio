@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Code, Zap, Star, Sparkles, Github, Linkedin, Mail } from 'lucide-react';
+import { USER_EMAIL, USER_NAME } from '../util';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -45,11 +46,11 @@ const Hero = () => {
               </h1>
 
               <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-2xl">
-                Expert full-stack developer specializing in 
+                Expert full-stack developer specializing in
                 <span className="font-semibold text-blue-600"> Lovable</span>,
                 <span className="font-semibold text-purple-600"> Cursor</span>,
                 <span className="font-semibold text-green-600"> Replit</span>,
-                <span className="font-semibold text-orange-600"> Bolt.new</span>, and the 
+                <span className="font-semibold text-orange-600"> Bolt.new</span>, and the
                 <span className="font-semibold text-indigo-600"> MERN stack</span>.
               </p>
 
@@ -85,7 +86,7 @@ const Hero = () => {
             <div className="flex items-center justify-between pt-8">
               <div className="grid grid-cols-3 gap-8">
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">50+</div>
+                  <div className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">15+</div>
                   <div className="text-gray-600 text-sm font-medium">Projects</div>
                 </div>
                 <div className="text-center">
@@ -112,7 +113,7 @@ const Hero = () => {
                   <Linkedin size={20} />
                 </a>
                 <a
-                  href="mailto:hello@devpro.com"
+                  href={`mailto:${USER_EMAIL}`}
                   className="p-3 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-xl text-gray-600 hover:text-blue-600 hover:bg-white hover:shadow-lg transition-all duration-300 transform hover:scale-110"
                 >
                   <Mail size={20} />
@@ -136,11 +137,11 @@ const Hero = () => {
                     <div className="w-3 h-3 bg-green-400 rounded-full"></div>
                   </div>
                 </div>
-                
+
                 <div className="bg-gray-900 rounded-xl p-6 font-mono text-sm space-y-2 shadow-inner">
                   <div className="text-green-400">// Building exceptional digital experiences</div>
                   <div className="text-blue-400">const <span className="text-yellow-400">developer</span> = {`{`}</div>
-                  <div className="ml-4 text-gray-300">name: <span className="text-green-300">'DevPro'</span>,</div>
+                  <div className="ml-4 text-gray-300">name: <span className="text-green-300">'{USER_NAME}'</span>,</div>
                   <div className="ml-4 text-gray-300">expertise: [</div>
                   <div className="ml-8 text-orange-400">'Lovable', 'Cursor', 'Replit',</div>
                   <div className="ml-8 text-orange-400">'Bolt.new', 'MERN', 'Supabase'</div>
@@ -156,7 +157,7 @@ const Hero = () => {
               <div className="absolute -top-4 -right-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-lg animate-bounce">
                 Available Now!
               </div>
-              
+
               <div className="absolute -bottom-4 -left-4 bg-gradient-to-r from-green-500 to-blue-500 text-white px-4 py-2 rounded-lg text-sm font-semibold shadow-lg animate-pulse">
                 Fast Delivery
               </div>

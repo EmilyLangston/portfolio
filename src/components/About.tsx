@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Heart, Target, Users, Camera, Upload } from 'lucide-react';
+import { Award, Heart, Target, Users, Camera, Upload, Rocket } from 'lucide-react';
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Passionate full-stack developer with expertise across modern development platforms and frameworks
+            Rapid full-stack developer launching scalable, AI-powered MVPs using modern JavaScript and cutting-edge tools.
           </p>
         </div>
 
@@ -18,8 +18,8 @@ const About = () => {
             <div className="relative">
               {/* Photo placeholder with upload area */}
               <div className="aspect-square max-w-md mx-auto bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl border-4 border-white shadow-2xl overflow-hidden group hover:shadow-3xl transition-all duration-500 hover:scale-105 hover:rotate-2">
-                <img 
-                  src="./me.png" 
+                <img
+                  src="./me.png"
                   alt="Personal photo"
                   className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110 group-hover:contrast-105"
                 />
@@ -40,35 +40,29 @@ const About = () => {
           <div className="order-1 lg:order-2 space-y-8">
             <div className="prose prose-lg text-gray-600 space-y-6">
               <p className="text-lg leading-relaxed">
-                I'm a versatile full-stack developer who thrives on building exceptional digital experiences.
-                My expertise spans across cutting-edge platforms like <span className="font-semibold text-blue-600">Lovable</span>,
-                <span className="font-semibold text-purple-600"> Cursor</span>,
-                <span className="font-semibold text-green-600"> Replit</span>, and
-                <span className="font-semibold text-orange-600"> Bolt.new</span>,
-                as well as robust technologies including the MERN stack, Supabase, and Next.js.
+                I'm a versatile full-stack developer passionate about transforming ideas into fast, scalable, and AI-powered digital solutions.
+                I specialize in modern tools like
+                <span className="font-semibold text-pink-500"> Lovable.dev</span>,
+                <span className="font-semibold text-yellow-500"> Bolt.new</span>,
+                <span className="font-semibold text-indigo-500"> Cursor</span>,
+                <span className="font-semibold text-emerald-500"> Replit</span>, and
+                <span className="font-semibold text-red-500"> Make.com</span>,
+                combined with robust technologies such as the
+                <span className="font-semibold text-cyan-600"> MERN stack</span>,
+                <span className="font-semibold text-lime-600"> Supabase</span>, and
+                <span className="font-semibold text-fuchsia-600"> Next.js</span>.
               </p>
               <p className="text-lg leading-relaxed">
-                What sets me apart is my ability to rapidly prototype and deploy applications across multiple
-                platforms while maintaining high code quality and user experience standards. I believe in
-                leveraging the right tools for each project to deliver optimal results.
+                What makes me stand out is my ability to rapidly launch MVPs—often within 24 to 72 hours—enabling you to validate your product quickly and move to market faster than traditional development cycles. I focus on writing clean, well-structured TypeScript code and building automation-powered apps designed to grow seamlessly.
               </p>
               <p className="text-lg leading-relaxed">
-                Whether you need a lightning-fast MVP built in Bolt.new, a complex full-stack application
-                with Next.js and Supabase, or collaborative development in Replit, I bring the expertise
-                to make your vision a reality.
+                Whether you’re looking for a full-stack web app, a custom Shopify integration, AI-enhanced features, or optimized workflows with tools like Replit and Make.com, I bring the skills and tools to deliver solutions that are fast, reliable, and built for scale.
               </p>
             </div>
 
             {/* Values Grid */}
             <div className="grid grid-cols-2 gap-6 pt-8">
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl text-center transform hover:scale-105 transition-all duration-300 hover:shadow-lg border border-blue-100">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <Target className="text-white" size={24} />
-                </div>
-                <h3 className="font-semibold text-gray-900 mb-2">Goal-Oriented</h3>
-                <p className="text-gray-600 text-sm">Focused on delivering results that exceed expectations</p>
-              </div>
-
+              {/* 1. Passionate — warm, heartfelt purple */}
               <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-2xl text-center transform hover:scale-105 transition-all duration-300 hover:shadow-lg border border-purple-100">
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <Heart className="text-white" size={24} />
@@ -77,14 +71,25 @@ const About = () => {
                 <p className="text-gray-600 text-sm">Love for clean code and beautiful user experiences</p>
               </div>
 
-              <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl text-center transform hover:scale-105 transition-all duration-300 hover:shadow-lg border border-green-100">
-                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <Users className="text-white" size={24} />
+              {/* 2. Goal-Oriented — strong, focused blue */}
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl text-center transform hover:scale-105 transition-all duration-300 hover:shadow-lg border border-blue-100">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Target className="text-white" size={24} />
                 </div>
-                <h3 className="font-semibold text-gray-900 mb-2">Collaborative</h3>
-                <p className="text-gray-600 text-sm">Work seamlessly with teams and stakeholders</p>
+                <h3 className="font-semibold text-gray-900 mb-2">Goal-Oriented</h3>
+                <p className="text-gray-600 text-sm">Focused on delivering results that exceed expectations</p>
               </div>
 
+              {/* 3. Fast-Launching — energetic, vibrant green */}
+              <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl text-center transform hover:scale-105 transition-all duration-300 hover:shadow-lg border border-green-100">
+                <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Rocket className="text-white" size={24} />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">Fast-Launching</h3>
+                <p className="text-gray-600 text-sm">Launch MVPs fast and validate ideas quickly.</p>
+              </div>
+
+              {/* 4. Excellence — prestigious, confident orange */}
               <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-2xl text-center transform hover:scale-105 transition-all duration-300 hover:shadow-lg border border-orange-100">
                 <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <Award className="text-white" size={24} />

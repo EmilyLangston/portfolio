@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { USER_EMAIL, USER_NAME, USER_PHONE } from '../util';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,11 +13,11 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-1">
             <div className="mb-4">
               <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                DevPro
+                {USER_NAME}
               </span>
             </div>
             <p className="text-gray-400 mb-4 leading-relaxed">
-              Full-stack developer specializing in modern web technologies and rapid development platforms.
+              Rapid full-stack developer launching scalable, AI-powered MVPs using modern JavaScript and cutting-edge tools.
             </p>
             <div className="flex space-x-4">
               <a
@@ -41,7 +42,7 @@ const Footer = () => {
                 <Twitter size={20} />
               </a>
               <a
-                href="mailto:hello@devpro.com"
+                href={`mailto:${USER_EMAIL}`}
                 className="text-gray-400 hover:text-white transition-colors duration-200"
                 aria-label="Email"
               >
@@ -57,8 +58,9 @@ const Footer = () => {
               <li><a href="#" className="hover:text-white transition-colors duration-200">Web Development</a></li>
               <li><a href="#" className="hover:text-white transition-colors duration-200">Rapid Prototyping</a></li>
               <li><a href="#" className="hover:text-white transition-colors duration-200">Full-Stack Development</a></li>
-              <li><a href="#" className="hover:text-white transition-colors duration-200">API Development</a></li>
-              <li><a href="#" className="hover:text-white transition-colors duration-200">Consulting</a></li>
+              <li><a href="#" className="hover:text-white transition-colors duration-200">Automation Workflows</a></li>
+              <li><a href="#" className="hover:text-white transition-colors duration-200">API Integration</a></li>
+              <li><a href="#" className="hover:text-white transition-colors duration-200">Shopify Development</a></li>
             </ul>
           </div>
 
@@ -70,7 +72,8 @@ const Footer = () => {
               <li><span className="hover:text-white transition-colors duration-200">Node.js & Express</span></li>
               <li><span className="hover:text-white transition-colors duration-200">MongoDB & Supabase</span></li>
               <li><span className="hover:text-white transition-colors duration-200">Lovable & Bolt.new</span></li>
-              <li><span className="hover:text-white transition-colors duration-200">TypeScript</span></li>
+              <li><span className="hover:text-white transition-colors duration-200">TypeScript & JavaScript</span></li>
+              <li><span className="hover:text-white transition-colors duration-200">Stripe & OpenAI</span></li>
             </ul>
           </div>
 
@@ -78,8 +81,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <div className="space-y-2 text-gray-400">
-              <p>hello@devpro.com</p>
-              <p>+1 (555) 123-4567</p>
+              <p>{USER_EMAIL}</p>
+              <p>{USER_PHONE}</p>
               <p>Available Worldwide</p>
               <p className="text-sm mt-4 text-green-400">
                 🟢 Available for new projects
@@ -96,7 +99,7 @@ const Footer = () => {
               <span>using React, TypeScript & Tailwind CSS</span>
             </div>
             <div className="text-gray-400 text-sm">
-              © {currentYear} DevPro. All rights reserved.
+              © {currentYear} {USER_NAME}. All rights reserved.
             </div>
           </div>
         </div>

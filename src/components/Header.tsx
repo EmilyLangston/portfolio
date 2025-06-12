@@ -1,5 +1,6 @@
 import React from 'react';
 import { Menu, X, Code, Sparkles } from 'lucide-react';
+import { USER_NAME } from '../util';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -28,13 +29,13 @@ const Header = () => {
               </div>
               <div>
                 <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  DevPro
+                  {USER_NAME}
                 </span>
                 <div className="text-xs text-gray-500 font-medium">Full-Stack Developer</div>
               </div>
             </div>
           </div>
-          
+
           <nav className="hidden md:flex items-center space-x-1">
             {[
               { name: 'Home', id: 'home' },

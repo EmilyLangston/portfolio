@@ -1,42 +1,75 @@
 import React from 'react';
-import { Code2, Database, Globe, Smartphone, Zap, Cloud } from 'lucide-react';
+import { Code2, Database, Globe, Zap, Link2, Settings } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Rapid Development Platforms",
+      title: "MVP & Automation Tools",
       icon: <Zap className="text-yellow-500" size={32} />,
-      skills: ["Lovable", "Bolt.new", "Cursor", "Replit"],
+      skills: [
+        { name: "Lovable.dev", level: 4 },
+        { name: "Bolt.new", level: 5 },
+        { name: "Cursor", level: 4 },
+        { name: "Replit", level: 4 },
+        { name: "Make.com", level: 3 }
+      ],
       color: "from-yellow-400 to-orange-500"
     },
     {
       title: "Frontend Technologies",
       icon: <Globe className="text-blue-500" size={32} />,
-      skills: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+      skills: [
+        { name: "React", level: 5 },
+        { name: "Next.js", level: 5 },
+        { name: "Tailwind CSS", level: 5 },
+        { name: "Shopify", level: 5 },
+        { name: "Vite", level: 3 }
+      ],
       color: "from-blue-400 to-purple-500"
     },
     {
-      title: "Backend & Database",
+      title: "Backend & Databases",
       icon: <Database className="text-green-500" size={32} />,
-      skills: ["Node.js", "Express", "MongoDB", "Supabase"],
+      skills: [
+        { name: "Node.js", level: 5 },
+        { name: "Express", level: 5 },
+        { name: "Supabase", level: 4 },
+        { name: "Firebase", level: 4 },
+        { name: "MongoDB", level: 5 }
+      ],
       color: "from-green-400 to-teal-500"
     },
     {
-      title: "Full-Stack Development",
+      title: "Programming Languages",
       icon: <Code2 className="text-purple-500" size={32} />,
-      skills: ["MERN Stack", "API Development", "Authentication", "Real-time Apps"],
+      skills: [
+        { name: "JavaScript", level: 5 },
+        { name: "TypeScript", level: 5 },
+        { name: "Liquid", level: 3 },
+        { name: "SQL", level: 3 }
+      ],
       color: "from-purple-400 to-pink-500"
     },
     {
-      title: "Mobile & Responsive",
-      icon: <Smartphone className="text-indigo-500" size={32} />,
-      skills: ["Responsive Design", "Progressive Web Apps", "Mobile-First", "Cross-Browser"],
-      color: "from-indigo-400 to-blue-500"
+      title: "Integrations & APIs",
+      icon: <Link2 className="text-red-500" size={32} />,
+      skills: [
+        { name: "Stripe", level: 4 },
+        { name: "OpenAI", level: 5 },
+        { name: "REST APIs", level: 5 },
+        { name: "GraphQL", level: 3 }
+      ],
+      color: "from-red-400 to-yellow-500"
     },
     {
-      title: "Cloud & Deployment",
-      icon: <Cloud className="text-gray-500" size={32} />,
-      skills: ["Vercel", "Netlify", "AWS", "Docker"],
+      title: "DevOps & Workflows",
+      icon: <Settings className="text-gray-500" size={32} />,
+      skills: [
+        { name: "GitHub Actions", level: 4 },
+        { name: "Docker", level: 3 },
+        { name: "Vercel", level: 4 },
+        { name: "AWS Lambda", level: 3 }
+      ],
       color: "from-gray-400 to-slate-500"
     }
   ];
@@ -63,21 +96,22 @@ const Skills = () => {
                 </div>
                 <h3 className="ml-4 text-lg font-semibold text-gray-900">{category.title}</h3>
               </div>
-              
+
               <div className="space-y-2">
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skillIndex}
                     className="flex items-center justify-between p-2 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200"
                   >
-                    <span className="text-gray-700 font-medium">{skill}</span>
+                    <span className="text-gray-700 font-medium">{skill.name}</span>
                     <div className="flex space-x-1">
                       {[...Array(5)].map((_, i) => (
                         <div
                           key={i}
-                          className={`w-2 h-2 rounded-full ${
-                            i < 4 ? `bg-gradient-to-r ${category.color}` : 'bg-gray-300'
-                          }`}
+                          className={`w-2 h-2 rounded-full ${i < skill.level
+                            ? `bg-gradient-to-r ${category.color}`
+                            : 'bg-gray-300'
+                            }`}
                         />
                       ))}
                     </div>
