@@ -46,11 +46,13 @@ const Hero = () => {
               </h1>
 
               <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-2xl">
-                Expert full-stack developer specializing in
+                Rapid full-stack developer specializing in
                 <span className="font-semibold text-blue-600"> Lovable</span>,
                 <span className="font-semibold text-purple-600"> Cursor</span>,
                 <span className="font-semibold text-green-600"> Replit</span>,
-                <span className="font-semibold text-orange-600"> Bolt.new</span>, and the
+                <span className="font-semibold text-orange-600"> Bolt.new</span>,
+                <span className="font-semibold text-rose-600"> Supabase</span>,
+                <span className="font-semibold text-teal-600"> Shopify</span>, and the
                 <span className="font-semibold text-indigo-600"> MERN stack</span>.
               </p>
 
@@ -129,7 +131,7 @@ const Hero = () => {
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center space-x-3">
                     <Code className="text-blue-600" size={24} />
-                    <span className="font-semibold text-gray-900">DevPro.tsx</span>
+                    <span className="font-semibold text-gray-900">{USER_NAME}.tsx</span>
                   </div>
                   <div className="flex space-x-2">
                     <div className="w-3 h-3 bg-red-400 rounded-full"></div>
